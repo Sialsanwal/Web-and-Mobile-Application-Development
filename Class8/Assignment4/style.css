@@ -9,3 +9,31 @@ a{
 #head1{
 text-align: center  ;
 }
+#para-text{
+    text-align: center;
+}
+.codetext{
+    color: pink;
+    
+}
+#redcode{
+    color: red;
+}
+main{
+    padding-right: 50px;
+    padding-left: 90px;
+    text-align: justify;
+}
+
+
+footer{
+    background-color: gray;
+    text-align: center;
+}
+#foot1{
+    color: white;
+    font-size: bold;
+}
+#foot2{
+    color: orange;
+}

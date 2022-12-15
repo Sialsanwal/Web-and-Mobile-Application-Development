@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment 4</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,6 +22,7 @@
     </header>
     <main>
         <h1 id="head1">Assignemnt 2: Static Web: HTML/CSS</h1>
+        <p id="para-text">Due Sunday, January 9 11:59pm PST</p>
         <h2>Setup</h2>
         <p>Accept the Github classroom <span style="color: brown;">assignment</span> and clone this repo that contain
             stenchal code for
@@ -31,19 +32,137 @@
         <p>This is a muli-part assignment with objective of making you comfortable with HTML and CSS. By the end of this
             assignment, you will have styled some rectangular blocks and created a simple version of Twitter's home
             page. </p>
-        
+
         <p>If this assignment seems overwhelming to you, please come see a TA at TA hours to talk through some
             strategies for tracking it. We expext this assignment to be on time-consuming assignment as we cover lot of
             fundamental techniques. But with a good strategies, it can be finsihed in a reasonable amount of time.</p>
-        
+
         <p>
             Note: Only CSS and HTML will be used for this assignment. If you want to used JavaScript(or libraries such
             as jQuery) then feel free to , bu we only be grading correctness on your CSS and HTML.
         </p>
         <p>If you can, <b>Start Early!</b></p>
+
+        <h2>Part One</h2>
+        <h3>Specifications</h3>
+        <p>
+            Now that you understand some basic of HTML and CSS, let's take a took at how to allign the element. There
+            are multiple ways to allign HTML elements, but in this part, we recommand using flexboxes as they widely
+            used in modern web development(for example bootstrap V4 is built on top of flexboxes.)
+        </p>
+        <p>
+            Refer to this great webpage on how to used flexboxes: <a href="">Link</a>
+        </p>
+        <p>
+            Also feel free to use online resource such as Stack Overflow , MDN, W3 and Google for refrences.
+        </p>
+        <p>
+            When you open the provided HTML file part1/index.html, it should look like this:
+        </p>
+
+
+
+        <p>
+            we will describe how each row will behave dynamically and provide some hints for a possible approach:
+
+        </p>
+        <ol>
+            <li>For the third row, the red and blue rectangles should remain the same width, and the green space should
+                shrink.</li> <br>
+            Possible Approach: Have a div with red background and a div with a blue background both with fixed widh. Use
+            an appropraite value for <a href="">justify content</a>. <br>
+            <br>
+            <li>
+                For the fourth row, the blue end rectangle should remain the same width, and the red rectangle should
+                shrink. <br> <br>
+                Possible Approach: Have a div with a red background and a div with a blue background. Have a fixed width
+                on the blue div. Use <a href="">Flex Grow</a>
+            </li>
+            <br>
+            <li>
+                For the fifth row, the end square should remain the same size, but always remain in the center of green
+                rectangle.
+                <br> <br>
+                Hint: Think about how to keep a div fixed size and how to align something in the absoulte center of the
+                parent element.
+            </li> <br>
+            <li>
+                For the sixth row, the blue rectangle should remain the same size while the red rectangle should shrink.
+                The blue rectangle should remain in the center of the rows. <br>
+                <br>
+                Hint: Use two red divs. <br>
+
+            </li> <br>
+            <li>
+                For the seventh row, the red rectangle should remain in same width. <br>
+                <br>
+                Hint: Nest divs and use <code class="codetext">background-color: transparent</code>
+            </li>
+            <br>
+            <li>
+                For the eight row, the orange rectangle should remain the same size while the green space between them
+                shrinks.
+
+            </li>
+            <br>
+            <li>
+                For the ninth row, the green space between the orange rectangle should remain the same width while the
+                orange rectangle narrow.
+            </li>
+        </ol>
+
+
+        <p>
+            The example we provided with the first two rectangle blocks use flexboxes. You are not required to use
+            flexboxes for the next 7 rows, but we recommend, it is as it will be usefull in part 2 of this assignment.
+        </p>
+        <p>
+            You should only have to use the <code class="codetext">div</code> html element to complete the assignment.
+            Also,<b>none of the divs you create inside of the provided wrapper divs should have <code
+                    class="codetext">background-color:green;</code> </b>. But it is valid to specify non-green
+            background color for any divs including the wrappers.
+        </p>
+        <p>
+            Try to style the boxes are closely to the solution image as possible don't worry about getting exact
+            dimensions or rgbs value. We care about whats strcuture, CSS style you should used, and the dynamic behavior
+            of the page. However just for refrence,
+        </p>
+        <ol>
+            <li> The Color of the boxes we used are <code class="codetext">background-color:</code>
+                <code><mark id="redcode">red</mark> </code> <code>blue</code> and <code>orange</code>
+            </li>
+            <li>Some width/height values we used are <code class="codetext">20px, 40px, 80px</code></li>
+
+        </ol>
+        <p>
+            You are not required to use bootstrap in this part. You can used if you want but we acctually recommend
+            writing plans with HTML and CSS. Just for this part inline CSS is acceptable , but you should generally
+            avoid using inline CSS in future.
+        </p>
+        <h2>General Notes</h2>
+        <p>
+            As a remainder it's good idea to run your HTML and CSS syntax through validators. You should also consider
+            using an accessabilty checker such as WAVE.
+        </p>
+        <h2>
+            Troubleshooting
+        </h2>
+        <p>
+            There are hundreds of HTML and CSS tags, properties and values, and we do not expect student to learn each
+            one by heart. However this assignment and the first lab are intended for you to intivitevely understand the
+            language and to be proficient at knowing how to tackle the design by the end of the semester. <br> <br>
+            If you're having problems there are many guides to HTML and CSS online (CSSTricks and MDN are you friends,) as well as on our resource page.
+            <br> <br>
+            As always, if you are stuck on a particular part, you can always talks to be friendly TAs or ask question on course piazza (Check your mail for a signup link). <br><br>
+            <b>As a general rule of thumb , do not expect TAs to be able to solve every web problem you have. Even the most adept web  developer  can strugle a lot with specific CSS rules to use.</b>
+        </p>
+
+
+
     </main>
 
     <footer>
+        <span id="foot1">&copy;2022| Muhammad Umair Ahmad</span> <br><span id="foot2">www.umairahmad.net</span>
 
 
     </footer>
