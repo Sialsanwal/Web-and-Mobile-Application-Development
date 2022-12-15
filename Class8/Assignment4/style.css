@@ -6,20 +6,23 @@ a {
     text-decoration: none;
     text-decoration: transparent;
 }
-
-#flex-container{
+.flex-container{
     display: flex;
-  flex-wrap: nowrap;
-  background-color: blue;
+    border: 5px solid f;
+    /* height: 100%; */
+    width: 100%;
 }
-.flex-container > div {
-    background-color: green;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
+
+.flex-item{
+    /* padding: 60px; */
+    border: 10px;
+    background-color: aqua;
+    /* height: 100%; */
+    width: 100%;
+    text-decoration: transparent;
+
+
+}
 
 #head1 {
     text-align: center;
