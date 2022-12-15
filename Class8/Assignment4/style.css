@@ -1,39 +1,60 @@
-nav{
-    text-align: center;   
-
-    
-}
-a{
-    text-decoration: none;
-}
-#head1{
-text-align: center  ;
-}
-#para-text{
+nav {
     text-align: center;
 }
-.codetext{
-    color: pink;
-    
+
+a {
+    text-decoration: none;
+    text-decoration: transparent;
 }
-#redcode{
+
+#flex-container{
+    display: flex;
+  flex-wrap: nowrap;
+  background-color: blue;
+}
+.flex-container > div {
+    background-color: green;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+#head1 {
+    text-align: center;
+}
+
+#para-text {
+    text-align: center;
+}
+
+.codetext {
+    color: pink;
+
+}
+
+#redcode {
     color: red;
 }
-main{
+
+main {
     padding-right: 50px;
     padding-left: 90px;
     text-align: justify;
 }
 
 
-footer{
+footer {
     background-color: gray;
     text-align: center;
 }
-#foot1{
+
+#foot1 {
     color: white;
     font-size: bold;
 }
-#foot2{
+
+#foot2 {
     color: orange;
 }
