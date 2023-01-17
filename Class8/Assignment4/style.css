@@ -16,10 +16,10 @@ a {
 .flex-item{
     /* padding: 60px; */
     border: 10px;
-    background-color: aqua;
+    background-color: red;
     /* height: 100%; */
     width: 100%;
-    text-decoration: transparent;
+    
 
 
 }
